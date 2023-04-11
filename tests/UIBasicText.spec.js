@@ -1,5 +1,6 @@
 const { test, expect } = require('@playwright/test')
 
+// eslint-disable-next-line no-unused-vars
 test('First Playwright text', async ({ browser, page }) => {
   // no need to declare
   // const context = await browser.newContext()
