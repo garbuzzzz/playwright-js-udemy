@@ -4,13 +4,26 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-		"head": "npx playwright test --headed",
-		"test": "npx playwright test"
-	},
+    "head": "npx playwright test --headed",
+    "test": "npx playwright test",
+    "lint": "eslint . --fix --max-warnings=0",
+    "format": "prettier . --write",
+    "prepare": "husky install"
+  },
   "keywords": [],
   "author": "Pavel Garbuz",
   "license": "ISC",
   "devDependencies": {
-    "@playwright/test": "^1.32.3"
+    "@playwright/test": "^1.32.3",
+    "eslint": "^8.38.0",
+    "eslint-config-prettier": "^8.8.0",
+    "husky": "^8.0.3",
+    "lint-staged": "^13.2.1",
+    "mrm": "^2.6.2",
+    "prettier": "2.8.7"
+  },
+  "dependencies": {},
+  "lint-staged": {
+    "**/*": "prettier --write --ignore-unknown --no-stash"
   }
 }
