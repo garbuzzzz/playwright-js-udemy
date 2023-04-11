@@ -3,9 +3,12 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+		"head": "npx playwright test --headed",
+		"test": "npx playwright test"
+	},
   "keywords": [],
-  "author": "",
+  "author": "Pavel Garbuz",
   "license": "ISC",
   "devDependencies": {
     "@playwright/test": "^1.32.3"
