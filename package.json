@@ -6,6 +6,7 @@
   "scripts": {
     "head": "npx playwright test --headed",
     "test": "npx playwright test",
+    "repeatEach": "npx playwright test --repeat-each=5",
     "lint": "eslint . --fix --max-warnings=0",
     "format": "prettier . --write",
     "prepare": "husky install"

@@ -10,8 +10,8 @@ const config = {
 	},
 	reporter: 'html',
 	use: {
-		browserName: 'webkit',
-		headless: false,
+		browserName: 'firefox',
+		headless: true,
 	},
 }
 
