@@ -19,14 +19,15 @@ test('First Playwright text', async ({ browser, page }) => {
 })
 
 // eslint-disable-next-line playwright/no-focused-test
-test.only('filling the fields', async ({ page }) => {
+test('filling the fields', async ({ page }) => {
 	await page.goto('https://rahulshettyacademy.com/loginpagePractise')
 	const userName = page.locator('input#username')
 	const password = page.locator('input#password')
 	const signIn = page.locator('input#signInBtn')
 	await userName.fill('rahulshettyacademy')
 	await password.fill('learning')
-	await signIn.click()
+	// eslint-disable-next-line playwright/no-force-option
+	await signIn.click({ force: true })
 
 	// works fine:
 	// console.log(await page.locator('.card-body a').nth(0)
