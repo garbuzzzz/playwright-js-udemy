@@ -1,7 +1,8 @@
 {
-  "bracketSpacing": true,
-  "bracketSameLine": true,
-  "semi": false,
-  "singleQuote": true,
-  "endOfLine": "lf"
+	"bracketSpacing": true,
+	"bracketSameLine": true,
+	"semi": false,
+	"singleQuote": true,
+	"endOfLine": "lf",
+	"useTabs": true
 }

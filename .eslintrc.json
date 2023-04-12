@@ -1,22 +1,30 @@
 {
-  "extends": ["eslint:recommended", "prettier"],
-  "overrides": [],
-  "parserOptions": {
-    "ecmaVersion": "latest"
-  },
-  "rules": {
-    "semi": ["warn", "never"],
-    "quotes": [2, "single"],
-    "indent": ["error", "tab"],
-    "object-curly-spacing": ["error", "always"],
-    "no-multiple-empty-lines": ["error", { "max": 1, "maxEOF": 0 }],
-    "no-trailing-spaces": ["error", { "skipBlankLines": true }],
-    "newline-per-chained-call": [
-      "error",
-      {
-        "ignoreChainWithDepth": 2
-      }
-    ],
-    "no-undef": "off"
-  }
+	"extends": [
+		"eslint:recommended",
+		"prettier",
+		"plugin:playwright/playwright-test"
+	],
+	"overrides": [],
+	"parserOptions": {
+		"ecmaVersion": "latest"
+	},
+	"rules": {
+		"semi": ["warn", "never"],
+		"quotes": [2, "single"],
+		"indent": ["error", "tab"],
+		"object-curly-spacing": ["error", "always"],
+		"no-multiple-empty-lines": ["error", { "max": 1, "maxEOF": 0 }],
+		"no-trailing-spaces": ["error", { "skipBlankLines": true }],
+		"newline-per-chained-call": [
+			"error",
+			{
+				"ignoreChainWithDepth": 2
+			}
+		],
+		"no-undef": "off",
+		"playwright/missing-playwright-await": [
+			"error",
+			{ "customMatchers": ["toBeCustomThing"] }
+		]
+	}
 }
