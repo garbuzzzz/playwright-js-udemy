@@ -4,9 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "head": "npx playwright test --headed",
+    "headed": "npx playwright test --headed",
     "test": "npx playwright test",
     "repeatEach": "npx playwright test --repeat-each=5",
+		"debug": "npx playwright test --headed --debug",
     "lint": "eslint . --fix --max-warnings=0",
     "format": "prettier . --write",
     "prepare": "husky install"
