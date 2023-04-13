@@ -11,9 +11,9 @@
 	"rules": {
 		"semi": ["warn", "never"],
 		"quotes": [2, "single"],
-		"indent": ["error", "tab"],
-		"object-curly-spacing": ["error", "always"],
-		"no-multiple-empty-lines": ["error", { "max": 1, "maxEOF": 0 }],
+		"indent": ["warn", "tab"],
+		"object-curly-spacing": ["warn", "always"],
+		"no-multiple-empty-lines": ["warn", { "max": 1, "maxEOF": 0 }],
 		"no-trailing-spaces": ["warn", { "skipBlankLines": true }],
 		"newline-per-chained-call": [
 			"warn",

@@ -8,6 +8,7 @@
     "test": "npx playwright test",
     "repeatEach": "npx playwright test --repeat-each=5",
 		"debug": "npx playwright test --headed --debug",
+		"trace": "npx playwright test --trace on",
     "lint": "eslint . --fix --max-warnings=0",
     "format": "prettier . --write",
     "prepare": "husky install"
