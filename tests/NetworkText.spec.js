@@ -14,6 +14,11 @@ test.beforeAll( async()=>
 //create order is success
 test('Place the order', async ({ page })=>
 {
+	// to show any request made while testing in the console:
+	page.on('request', request => {
+		console.log(request.url(), request.status())
+	})
+
 	page.addInitScript(value => {
 		window.localStorage.setItem('token',value)
 	}, response.token )
