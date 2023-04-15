@@ -8,7 +8,7 @@ test.beforeAll( async()=>
 {
 	const apiContext = await request.newContext()
 	const apiUtils = new APiUtils(apiContext,loginPayLoad)
-	response =  await apiUtils.createOrder(orderPayLoad)
+	response = await apiUtils.createOrder(orderPayLoad)
 })
 
 //create order is success
@@ -16,11 +16,14 @@ test('Place the order', async ({ page })=>
 {
 	// to show any request made while testing in the console:
 	page.on('request', request => {
-		console.log(request.url(), request.status())
+		console.log(request.url())
+	})
+	page.on('response', response => {
+		console.log(response.url(), response.status())
 	})
 
 	page.addInitScript(value => {
-		window.localStorage.setItem('token',value)
+		window.localStorage.setItem('token', value)
 	}, response.token )
 
 	await page.goto('https://rahulshettyacademy.com/client')
