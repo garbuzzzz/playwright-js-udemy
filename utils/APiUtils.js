@@ -14,7 +14,7 @@ class APiUtils
 			} )//200,201,
 		const loginResponseJson = await loginResponse.json()
 		const token =loginResponseJson.token
-		console.log(token)
+		// console.log(token)
 		return token
 	}
 
@@ -31,8 +31,8 @@ class APiUtils
 				},
 
 			})
-		const orderResponseJson =await orderResponse.json()
-		console.log(orderResponseJson)
+		const orderResponseJson = await orderResponse.json()
+		// console.log(orderResponseJson)
 		const orderId = orderResponseJson.orders[0]
 		response.orderId = orderId
 
