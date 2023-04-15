@@ -40,7 +40,11 @@ test('Place the order', async ({ page })=>
 		})
 
 	await page.locator('button[routerlink*=\'myorders\']').click()
+	page.screenshot({ path: 'screenshots/test1/loading.png' })
+	page.locator('button[routerlink*=\'myorders\']').screenshot({ path: 'screenshots/test1/button.png' })
+
 	await page.waitForResponse('https://rahulshettyacademy.com/api/ecom/order/get-orders-for-customer/643a6e8a568c3e9fb1525df0')
+	page.screenshot({ path: 'screenshots/test1/no-orders.png' })
 
 	const message = await page.locator('.mt-4').textContent()
 	expect(message).toBe(' You have No Orders to show at this time. Please Visit Back Us ')
