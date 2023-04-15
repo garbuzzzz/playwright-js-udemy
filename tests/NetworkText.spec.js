@@ -37,3 +37,6 @@ test('Place the order', async ({ page })=>
 	const message = await page.locator('.mt-4').textContent()
 	expect(message).toBe(' You have No Orders to show at this time. Please Visit Back Us ')
 })
+
+// in case css or other things don't impact the whole test automation process
+// page.route('**/*.{jpg,png,jpeg}',route=> route.abort());
