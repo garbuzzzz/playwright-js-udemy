@@ -12,7 +12,7 @@ const config = {
 	use: {
 		browserName: 'chromium',
 		headless: true,
-		screenshot : 'on',
+		screenshot :  'only-on-failure',
 		trace : 'retain-on-failure',//on, off, on-first-retry, retain-on-failure
 	},
 }
