@@ -4,6 +4,7 @@ const { devices } = require('@playwright/test')
 
 const config = {
 	testDir: './tests',
+	retries: 2, //* only for mocha!
 	timeout: 45 * 1000,
 	expect: {
 		timeout: 5000,

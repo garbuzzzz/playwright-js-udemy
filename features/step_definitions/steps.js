@@ -1,7 +1,12 @@
-// npx cucumber-js
-// npx cucumber-js --exit
-// npx cucumber-js features/ErrorValidations.feature --exit
-// npx cucumber-js --tags "@Regression" --exit
+//* npx cucumber-js
+//* npx cucumber-js --exit
+//* npx cucumber-js features/ErrorValidations.feature --exit
+//* npx cucumber-js --tags "@Regression" --exit
+//* npx cucumber-js features/ErrorValidations.feature parallel 3 --exit // doesn't work without filename provided
+//* npx cucumber-js parallel 3 --exit // doesn't work without filename provided
+//* npx cucumber-js --exit --format html:cucumber-report.html
+//* npx cucumber-js --exit --format json:cucumber-report.json
+// * npx cucumber-js --exit --retry 1 // re-runs are not visible, but performed
 
 const { When, Then, Given } = require('@cucumber/cucumber')
 const { expect } = require('@playwright/test')

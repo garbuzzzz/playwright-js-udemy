@@ -1,0 +1,110 @@
+[
+  {
+    "description": "\tDesc: Playing around with Ecommerce validations",
+    "elements": [
+      {
+        "description": "",
+        "id": "ecommerce-validations;placing-an-order",
+        "keyword": "Scenario",
+        "line": 5,
+        "name": "Placing an Order",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 689867299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "login to Commerce app with \"garbuz.pb@gmail.com\" and \"qwer0qwer0qwer0\"",
+            "match": {
+              "location": "features\\step_definitions\\steps.js:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5771767599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "add \"zara coat 3\" to cart",
+            "match": {
+              "location": "features\\step_definitions\\steps.js:21"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2198786600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "verify \"zara coat 3\" is displayed in the Cart",
+            "match": {
+              "location": "features\\step_definitions\\steps.js:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 422743399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 9,
+            "name": "enter valid details and Place an Order",
+            "match": {
+              "location": "features\\step_definitions\\steps.js:33"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1153403299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "verify the order is present in the orderHistory",
+            "match": {
+              "location": "features\\step_definitions\\steps.js:39"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 786934197
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 296100
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Regression",
+            "line": 4
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "ecommerce-validations",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Ecommerce validations",
+    "tags": [],
+    "uri": "features\\ecommerce.feature"
+  }
+]
