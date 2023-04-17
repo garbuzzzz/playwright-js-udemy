@@ -14,6 +14,7 @@ const config = {
 		headless: true,
 		screenshot :  'only-on-failure',
 		trace : 'retain-on-failure',//on, off, on-first-retry, retain-on-failure
+		video: 'off'
 	},
 }
 

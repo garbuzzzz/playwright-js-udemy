@@ -7,8 +7,8 @@
     "headed": "npx playwright test --headed",
     "test": "npx playwright test",
     "repeatEach": "npx playwright test --repeat-each=5",
-		"debug": "npx playwright test --headed --debug",
-		"trace": "npx playwright test --trace on",
+    "debug": "npx playwright test --headed --debug",
+    "trace": "npx playwright test --trace on",
     "lint": "eslint . --fix --max-warnings=0",
     "format": "prettier . --write",
     "prepare": "husky install"
@@ -17,6 +17,7 @@
   "author": "Pavel Garbuz",
   "license": "ISC",
   "devDependencies": {
+    "@cucumber/cucumber": "^9.1.0",
     "@playwright/test": "^1.32.3",
     "eslint": "^8.38.0",
     "eslint-config-prettier": "^8.8.0",
@@ -25,7 +26,6 @@
     "lint-staged": "^13.2.1",
     "prettier": "2.8.7"
   },
-  "dependencies": {},
   "lint-staged": {
     "*/--write": "prettier --write --ignore-unknown --no-stash",
     "*.js": "eslint . --fix --max-warnings=0"
