@@ -29,6 +29,6 @@
   },
   "lint-staged": {
     "*/--write": "prettier --write --ignore-unknown --no-stash",
-    "*.js": "eslint . --fix --max-warnings=20 --max-errors=1"
+    "*.js": "eslint . --fix --max-warnings=20"
   }
 }

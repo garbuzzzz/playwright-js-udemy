@@ -10,7 +10,7 @@
 
 const { When, Then, Given } = require('@cucumber/cucumber')
 const { expect } = require('@playwright/test')
-const playwright = require('@playwright/test')
+// const playwright = require('@playwright/test')
 
 //* Ecommerce.feature:
 Given('login to Commerce app with {string} and {string}', { timeout: 10000 }, async function (username, password) {
