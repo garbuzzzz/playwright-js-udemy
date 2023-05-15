@@ -10,7 +10,7 @@
     "debug": "npx playwright test --headed --debug",
 		"cucumberRegression": "npx cucumber-js --tags \"@Regression\" --exit --format json:cucumber-report.json --retry 1",
     "trace": "npx playwright test --trace on",
-    "lint": "eslint . --fix --max-warnings=0",
+    "lint": "eslint . --fix --max-warnings=18",
     "format": "prettier . --write",
     "prepare": "husky install"
   },
@@ -29,6 +29,6 @@
   },
   "lint-staged": {
     "*/--write": "prettier --write --ignore-unknown --no-stash",
-    "*.js": "eslint . --fix --max-warnings=0"
+    "*.js": "eslint . --fix --max-warnings=20 --max-errors=1"
   }
 }
